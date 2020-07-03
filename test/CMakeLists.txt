@@ -11,8 +11,8 @@ include_directories(${GTEST_INCLUDE_DIR})
 
 #包含src的项目文件
 include_directories(../src)
-
-add_executable(main_test main.cpp 03-test.cpp)
+aux_source_directory(. TEXT_DIR)
+add_executable(main_test ${TEXT_DIR})
 
 
 #链接gtest_simple_lib,这个是src项目生成的静态库
