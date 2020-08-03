@@ -19,10 +19,45 @@ public:
     ~findDuplicate();
     static int findDuplicate2(std::vector<int> data);
 
+    static int findDuplicate3(std::vector<int> data);
+
 private:
 };
 
 int findDuplicate::findDuplicate2(std::vector<int> data){
+    if(data.size()==0){
+        return -1;
+    }
+
+    for (int i = 0; i < data.size(); i++)
+    {
+        if (data[i]< 0 || data[i]>data.size()-1)
+        {
+            return -1;
+        }
+    }
+    for (int i = 0; i < data.size(); i++)
+    {
+        if(data[i]!= i){
+            if (data[data[i]] == data[i])
+            {
+                return data[i];
+            }else
+            {
+                int temp = data[i];
+                data[i] = data[data[i]];
+                data[temp] = temp;
+                i--;
+            }
+            
+        }
+    }
+    return -1;
+    
+
+}
+
+int findDuplicate::findDuplicate3(std::vector<int> data){
     if(data.size()==0){
         return -1;
     }

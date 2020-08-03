@@ -78,7 +78,7 @@ public:
         int ret = 0;
         for (int i = 5; i <= number; i++)
         {
-            for (int j = 1; i < i; j++)
+            for (int j = 1; j < i; j++)
             {
                 //计算第cutRope(i)的最大值。
                 mark[i]= std::max(mark[i], j*mark[i-j]);
