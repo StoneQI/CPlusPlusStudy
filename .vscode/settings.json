@@ -50,9 +50,15 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "queue": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "list": "cpp",
+        "unordered_set": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "cinttypes": "cpp"
     },
     "python.pythonPath": "/home/stone/anaconda3/envs/tf2/bin/python",
     "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "remoteX11.SSH.privateKey": "C:\\Users\\xiyao\\.ssh\\id_rsa-nvidia1080"
 }

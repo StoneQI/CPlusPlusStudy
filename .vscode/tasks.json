@@ -10,12 +10,12 @@
                 "-o",
                 "${fileDirname}/build/${fileBasenameNoExtension}",
                 "-std=c++11",
-                "-Wall",
-                "-g",
-                "-fsanitize=address",
-                "-fno-omit-frame-pointer",
-                "-fsanitize-recover=address",
-                "-static-libasan"
+                "-Wall",   
+                // "-fsanitize=address",
+                // "-fno-omit-frame-pointer",
+                // "-fsanitize-recover=address",
+                // "-static-libasan",
+                "-g"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"

@@ -1,0 +1,30 @@
+
+
+
+
+
+yu = 1E9+7;
+count =0;
+def dfs(pai, xue):
+    for item in pai:
+        if (xue-item) < 0: 
+            return
+
+        if (xue-item) == 0:
+            count = count+1
+            if count >= yu:
+                count = count % yu
+        dfs(pai,xue-item)
+temp = input()
+n,m = temp.split(" ")
+n = int(n)
+m =int(m)
+pai = []
+for i in range(n):
+    temp = input()
+    pai.append(int(temp))
+
+pai = pai.sort()
+dfs(pai,m)
+
+print(count)
